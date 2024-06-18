@@ -1,0 +1,21 @@
+#!/usr/bin/env/bash
+
+# Check if the correct number of arguments are passed
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 <MySQL-Username> <MySQL-Password>"
+    exit 1
+fi
+
+# Get the username and password from the command line arguments
+MYSQL_USER=$1
+MYSQL_PASS=$2
+
+# Run the SQL script using the provided username and password
+mysql -u $MYSQL_USER -p$MYSQL_PASS < setup.sql
+
+# Check if the command was successful
+if [ $? -eq 0 ]; then
+    echo "Database and tables created successfully."
+else
+    echo "An error occurred while creating the database and tables."
+fi
