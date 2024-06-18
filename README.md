@@ -1,5 +1,9 @@
 # Creating a login page using Python Flask, MySQL and HTML and CSS
 
+![Python badge](https://img.shields.io/badge/Python-CC5500)
+![Flask badge](https://img.shields.io/badge/Flask-CC5500)
+![MySQL badge](https://img.shields.io/badge/MySQL-CC5500)
+
 ## Allows users to enter there username and password the signin
 #### After users entering there username and password there are posted to backend and the values are confirmed to the database
 ![Login page](https://github.com/peterodero561/Login/blob/main/images/login.png)
@@ -14,7 +18,7 @@
 
 
 
-# Setting your PC to act like server to test the webpages
+# Setting your PC to test the webpages
 
 ## 1. Setting up your database.
 
@@ -31,7 +35,7 @@ if the above fails use option **b)**
 
 ### b) Code your database
 
-login to your MySQL session
+i. Login to your MySQL session
 ```
 sudo mysql
 ```
@@ -40,7 +44,7 @@ sudo mysql
 mysql
 ```
 
-Execute the following sql code while in your MySQL session
+ii. Execute the following sql code while in your MySQL session
 
 ```sql
 
@@ -57,3 +61,30 @@ CREATE TABLE IF NOT EXISTS accounts (
 );
 ```
 
+## 2. Setting your PC to act like a Server
+
+Using the code in **app.py** you can set your PC to act like a server to server the webpages provided.
+
+### run the code in your terminal
+
+```
+python3 app.py
+```
+**OR**
+```
+./app.py
+```
+
+
+## 3. Browse the pages in you web browser.
+i. For the register page
+```
+_http://localhost:5000/register_
+```
+
+ii. For the login page
+```
+_http://localhost:5000/register_
+```
+
+On successfull **Registation and Login** your are directed to the home page
