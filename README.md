@@ -20,10 +20,27 @@
 
 If your using the code in **app.py**.
 
-### a)
+### a) Using bash script and sql script to setup your data base
 
-### b)
-code your database
+get the code in **setup & setup.sql** in your pc and run the bash script **set up**
+```
+./setup MysqlUser YourMySQLPassword
+```
+
+if the above fails use option **b)**
+
+### b) Code your database
+
+login to your MySQL session
+```
+sudo mysql
+```
+**OR**
+```
+mysql
+```
+
+Execute the following sql code while in your MySQL session
 
 ```sql
 
